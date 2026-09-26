@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bianca Salvador — 19th Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- ============ 1. COUNTDOWN GATE ============ -->
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <p class="eyebrow">Counting down</p>
+    <h1 class="display">Bianca's Special Day<br><em>is Coming</em></h1>
+    <p class="sub" id="gateSub">Everyone kind deserves a day like this</p>
+
+    <div class="flipclock" id="clock">
+      <div class="flip"><span class="digits" id="cdDays">00</span><span class="unit">days</span></div>
+      <div class="colon">:</div>
+      <div class="flip"><span class="digits" id="cdHours">00</span><span class="unit">hours</span></div>
+      <div class="colon">:</div>
+      <div class="flip"><span class="digits" id="cdMins">00</span><span class="unit">minutes</span></div>
+      <div class="colon">:</div>
+      <div class="flip"><span class="digits" id="cdSecs">00</span><span class="unit">seconds</span></div>
+    </div>
+
+    <p class="gate-note" id="gateNote">The gift unlocks on her birthday</p>
+    <button class="btn" id="openGift" disabled>Open your gift</button>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main class="site" id="site">
+
+  <!-- NAVIGATION -->
+  <nav class="topnav" id="topnav">
+    <a href="#hero">Home</a>
+    <a href="#letter">Letter</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#wishes">Wishes</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- 2. HERO -->
+  <section class="hero" id="hero">
+    <div class="scatter" id="scatter" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">A love letter for Biancakes</p>
+      <h1 class="display xl">Your<br>Special Day</h1>
+      <p class="sub">Made with love, just for you</p>
+      <a class="btn" href="#letter">Read my letter</a>
+    </div>
+  </section>
+
+  <!-- 3. LETTER -->
+  <section class="panel" id="letter">
+    <h2 class="display">Happy Birthday</h2>
+    <article class="letter-card" id="letterCard"></article>
+    <a class="btn ghost" href="#gallery">See our photos</a>
+  </section>
+
+  <!-- 4. POLAROID GALLERY -->
+  <section class="panel" id="gallery">
+    <h2 class="display">Us, Lately</h2>
+    <div class="polagrid" id="polagrid"></div>
+    <a class="btn ghost" href="#wishes">Birthday wishes</a>
+  </section>
+
+  <!-- 5. WISHES -->
+  <section class="panel" id="wishes">
+    <div class="wish-card">
+      <h2 class="display sm">Birthday Wishes</h2>
+      <p class="wish-hi" id="wishHi"></p>
+      <p class="wish-body" id="wishBody"></p>
+      <a class="btn" href="#finale">One more thing</a>
+    </div>
+  </section>
+
+  <!-- 6. FINALE -->
+  <section class="panel finale" id="finale">
+    <h2 class="display xl fade-title">With All My Love</h2>
+    <p class="sub" id="finaleText"></p>
+    <p class="signoff">Forever yours <span class="heart">♥</span></p>
+    <button class="btn ghost" id="replay">From the Top</button>
+  </section>
+
+</main>
+
+<button class="music-toggle" id="musicToggle" title="Play music" aria-label="Play music">♪</button>
+<audio id="bgm" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
