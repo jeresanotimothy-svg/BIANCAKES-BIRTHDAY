@@ -28,14 +28,14 @@ const CONFIG = {
 
   // ---- Polaroid gallery. Mix photos and short clips freely ----
   gallery: [
-    { src: "7.jpg", caption: "first date" },
-    { src: "11.jpg", caption: "december" },
-    { src: "9.jpg", caption: "mall trip" },
-    { src: "10.jpg", caption: "flowers" },
-    { src: "13.jpg", caption: "your laugh" },
-    { src: "8.jpg", caption: "rainy day" },
+    { src: "7.jpg", caption: "Tagaytay date" },
+    { src: "11.jpg", caption: "Caferoo" },
+    { src: "9.jpg", caption: "my baby" },
+    { src: "10.jpg", caption: "mall trip" },
+    { src: "13.jpg", caption: "your cuteness" },
+    { src: "8.jpg", caption: "spiderman day" },
     { src: "12.jpg", caption: "us" },
-    { src: "14.jpg", caption: "last week" }
+    { src: "14.jpg", caption: "last month" }
   ],
 
   // ---- Background music (leave "" for no music) ----
